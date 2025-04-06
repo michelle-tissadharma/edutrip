@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutrip</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            background-color: #4682b4;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5a9bd6;
+            border-radius: 8px;
+        }
+
+        header {
+            background-color: #b0e0e6;
+            text-align: center;
+            padding: 30px 0;
+            animation: fadeIn 2s;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #2f4f4f;
+        }
+
+        header p {
+            font-size: 24px;
+            color: #2f4f4f;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px;
+            animation: slideUp 1.5s ease-out;
+        }
+
+        .content h1 {
+            font-size: 45px;
+            color: #4b0082;
+            margin-bottom: 20px;
+        }
+
+        .content table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 700px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 5px solid black;
+        }
+
+        .content td {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .content img {
+            display: block;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .draft-section {
+            width: 95%;
+            margin: 50px auto;
+            padding: 40px;
+            text-align: left;
+            font-size: 24px;
+            line-height: 1.7;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in;
+            border: 5px solid black;
+        }
+
+        .draft-section h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #4682b4;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agama.html">Agama</a></li>
+            <li><a href="pkn.html">PKN</a></li>
+            <li><a href="bahasaindonesia.html">Bahasa Indonesia</a></li>
+            <li><a href="bing.html">Bahasa Inggris</a></li>
+            <li><a href="ips.html">IPS</a></li>
+            <li><a href="mandarin.html">Bahasa Mandarin</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Edutrip 2025</h1>
+        <p>Website ini berisi tugas-tugas selama Edutrip.</p>
+    </header>
+
+    <section class="content">
+        <h1>Ini adalah halaman Agama</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>Dalam pelajaran agama saya ditugaskan untuk membuat sebuah laporan mengenai kegiatan di panti jompo bernama Ren'Ai Senior Citizens Home di Taiwan.</p>
+                </td>
+            </tr>
+        </table>
+        <img src="1736132F-6B6A-4732-B380-A1115FF6E31B_1_105_c.jpeg" height="600" width="600" alt="Senior Citizen Home">
+    </section>
+
+    <section class="draft-section">
+        <h2>Laporan Kegiatan</h2>
+        <p>Pada bulan Maret, saya dan teman-teman saya mengikuti kegiatan edutrip ke Keelung Taiwan, kami mengunjungi sebuah panti jompo bernama Ren Ai Senior Citizens Home. Kami pergi bersama dengan murid-murid sekolah Sacred Heart. Saat di panti jompo tersebut, kami menonton murid-murid Sacred Heart memberi pertunjukkan bahasa isyara dan pertunjukan alat music tradisional bernama hulusi. Setelah itu kami murid Santa Laurensia memberi pertunjukan drama mengenai seorang raja yang ingin mencoba mentimbang seekor gajah. Kami melakukan pertunjukan-pertunjukan ini agar para senior merasa senang dan terhibur. Tentunya kami berhasil melakukan itu karena para senior tersenyum dan selalu bertepuk tangan setelah setiap pertunjukan. Kegiatan ini sangat bermakna karena kami bisa belajar untuk menghibur dan peduli terhadap sesama, terutama orang tua yang sudah lanjut usia.</p>
+    </section>
+
+    <footer>
+        <p>2025 Edutrip. Michelle Regina Tissadharma</p>
+    </footer>
+</body>
+</html>

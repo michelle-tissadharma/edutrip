@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutrip</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color: #4682b4;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            padding: 10px 14px;
+            transition: transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5a9bd6;
+            border-radius: 8px;
+            transform: scale(1.1);
+        }
+
+        header {
+            background-color: #b0e0e6;
+            text-align: center;
+            padding: 40px 0;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 1s ease-out forwards;
+            flex: 1;
+            font-size: 24px;
+        }
+
+        .white-box {
+            background-color: white;
+            border: 3px solid black;
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .flag {
+            display: block;
+            margin: 30px auto;
+            max-width: 250px;
+        }
+
+        footer {
+            background-color: #4682b4;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            margin-top: auto;
+        }
+
+        h1, h2 {
+            font-size: 38px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.6;
+        }
+
+        .break {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agama.html">Agama</a></li>
+            <li><a href="pkn.html">PKN</a></li>
+            <li><a href="bahasaindonesia.html">Bahasa Indonesia</a></li>
+            <li><a href="bing.html">Bahasa Inggris</a></li>
+            <li><a href="ips.html">IPS</a></li>
+            <li><a href="mandarin.html">Bahasa Mandarin</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Selamat Datang di Edutrip</h1>
+        <p>Website ini berisi tugas-tugas selama Edutrip.</p>
+    </header>
+
+    <section class="content white-box">
+        <h2>Home</h2>
+        <p>Ini adalah halaman utama dari website Edutrip. 
+           <span class="break"></span> Silakan pilih mata pelajaran dari menu di atas untuk melihat tugas-tugas yang telah dikerjakan oleh saya selama perjalanan edutrip.</p>
+    </section>
+
+    <section class="content white-box">
+        <h2>Apa Itu Edutrip?</h2>
+        <p>Edutrip adalah singkatan dari <strong>"Education Trip"</strong>. 
+           <span class="break"></span> Dengan Edutrip, siswa dapat mengenal budaya baru, serta belajar dari pengalaman nyata yang tidak bisa diperoleh hanya dari buku pelajaran. 
+           <span class="break"></span>Dalam website ini, bisa ditemukan penjelasan dan hasil tugas-tugas serta dokumentasi kegiatan selama Edutrip berlangsung.</p>
+    </section>
+
+    <section class="content white-box">
+        <h2>Pada edutrip kali ini, saya dan beberapa teman-teman saya berkunjung ke Taiwan</h2>
+        <img src="download.png" alt="Bendera Taiwan" class="flag">
+    </section>
+
+    <footer>
+        <p>2025 Edutrip. Michelle Regina Tissadharma</p>
+    </footer>
+</body>
+</html>

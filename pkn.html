@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutrip</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        nav {
+            background-color: #4682b4;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5a9bd6;
+            border-radius: 8px;
+        }
+
+        header {
+            background-color: #b0e0e6;
+            text-align: center;
+            padding: 30px 0;
+            animation: fadeIn 2s;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #2f4f4f;
+        }
+
+        header p {
+            font-size: 24px;
+            color: #2f4f4f;
+        }
+
+        .pkn {
+            text-align: center;
+            padding: 40px;
+            animation: slideUp 1.5s ease-out;
+            flex: 1;
+        }
+
+        .pkn h1 {
+            font-size: 45px;
+            color: #4b0082;
+            margin-bottom: 20px;
+        }
+
+        .pkn table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        .pkn td {
+            padding: 20px;
+            border: 5px solid black;
+            font-size: 22px;
+        }
+
+        .pkn img {
+            display: block;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #4682b4;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agama.html">Agama</a></li>
+            <li><a href="pkn.html">PKN</a></li>
+            <li><a href="bahasaindonesia.html">Bahasa Indonesia</a></li>
+            <li><a href="bing.html">Bahasa Inggris</a></li>
+            <li><a href="ips.html">IPS</a></li>
+            <li><a href="mandarin.html">Bahasa Mandarin</a></li>
+        </ul>
+    </nav>
+
+    <section class="pkn">
+        <h1>Ini adalah halaman PKN</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>Dalam pelajaran PKN saya ditugaskan untuk memahami budaya dan tradisi dari negara yang saya kunjungi yaitu Taiwan.</p>
+                </td>
+            </tr>
+        </table>
+        <img src="chiang.jpeg" height="600" width="600" alt="Chiang Kai Shek">
+        <table>
+            <tr>
+                <td>
+                    <p>Chiang Kai-shek Memorial Hall di Taipei awalnya dibangun sebagai penghormatan kepada Chiang Kai-shek, pemimpin Republik Tiongkok dan tokoh penting dalam sejarah Taiwan. Pada masa lalu, tempat ini berfungsi sebagai simbol kekuasaan dan penghargaan terhadap kepemimpinannya, sementara kini menjadi destinasi wisata, pusat kegiatan budaya, dan ruang refleksi sejarah. Chiang Kai-shek memainkan peran besar dalam membentuk Taiwan sebagai negara modern melalui pembangunan infrastruktur, sistem pendidikan, dan industrialisasi. Warisan politik dan budayanya turut mengukuhkan semangat nasionalisme Taiwan, terutama melalui narasi anti-komunis dan ideologi Tiongkok tradisional yang ditanamkan oleh rezim Kuomintang (KMT). Untuk membangun persatuan dan identitas nasional, Chiang dan rezimnya menerapkan kebijakan sinifikasi, pendidikan patriotik, dan pembatasan kebebasan politik guna membentuk kesatuan identitas sebagai bagian dari “Tiongkok sejati”. Hingga kini, pengaruh tersebut masih terasa dalam politik identitas Taiwan dan perdebatan antara warisan Tiongkok dan identitas lokal Taiwan yang kian kuat.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>2025 Edutrip. Michelle Regina Tissadharma</p>
+    </footer>
+</body>
+</html>

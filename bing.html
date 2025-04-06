@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutrip</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color: #4682b4;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5a9bd6;
+            border-radius: 8px;
+            transform: scale(1.1);
+        }
+
+        header {
+            background-color: #b0e0e6;
+            text-align: center;
+            padding: 30px 0;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        header h1 {
+            font-size: 42px;
+            color: #2f4f4f;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #2f4f4f;
+        }
+
+        main, .mandarin, .inggris {
+            padding: 40px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 1s ease-out forwards;
+            flex: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        main p, .inggris p {
+            font-size: 20px;
+            color: #444;
+        }
+
+        .mandarin h1, .inggris h1 {
+            font-size: 40px;
+            color: #4b0082;
+            margin-bottom: 20px;
+        }
+
+        .mandarin p, .inggris p {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .mandarin table, .inggris table {
+            margin: 20px auto;
+            width: 90%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 2px solid black;
+        }
+
+        .mandarin td, .inggris td {
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        .mandarin img, .inggris img {
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: scale(0.9);
+            animation: fadeIn 1.2s ease-out 1s forwards;
+        }
+
+        footer {
+            background-color: #4682b4;
+            text-align: center;
+            padding: 15px;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agama.html">Agama</a></li>
+            <li><a href="pkn.html">PKN</a></li>
+            <li><a href="bahasaindonesia.html">Bahasa Indonesia</a></li>
+            <li><a href="bing.html">Bahasa Inggris</a></li>
+            <li><a href="ips.html">IPS</a></li>
+            <li><a href="mandarin.html">Bahasa Mandarin</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Edutrip 2025</h1>
+        <p>Website ini berisi tugas-tugas selama Edutrip.</p>
+    </header>
+
+    <section class="inggris">
+        <h1>Ini adalah halaman Bahasa Inggris</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>Dalam pelajaran Bahasa Inggris saya ditugaskan untuk membuat sebuah esai mengenai makanan dan minuman dari Taiwan.</p>
+                </td>
+            </tr>
+        </table>
+        <img src="istockphoto-469382746-612x612.jpg" width="600" alt="Ximending night market">
+        <table>
+            <tr>
+                <td>
+                    <h2>Draft of the Essay</h2>
+                    <p>When your munching on your delicious food, do you ever wonder about its history? One of the most historical cuisines you can find is Taiwanese cuisines. You can find them at a cheap price for good quality. Taiwanese cuisines are not all about food, but also about drinks. Most interesting Taiwanese cuisines perfecty reflect Chinese culture and history.
+                    <br><br>
+                    How Taiwanese Cuisines, Bring You to The Past: The most interesting thim about Taiwanese cuisines is that it tells a story of the past. It shows that in the past Taiwan was influenced by shina because Taiwan was one with china. This is why Taiwan's ways of looking is similar to china's. One of which is steaming, which is a technique used when making dumplings. Taiwanese cuisines also use similar ingredients in Ehinese cuisines such as rice, soy sauce, and pork. Untill now, Taiwanese cuisines still reflects it's past and is enjoyed by locals and tourist.
+                    <br><br>
+                    Where You Ean Buy Taiwanese Cuisines: We all know that there are alot of Taiwanese cuisines, but what is a dace that allmost bas all of taiwans cuisines? Well I have the answer, you can find tons of Taiwanese Cuisines from night markets- Nightmarkets are a popular tourist place when it comes to food, drinks, and shopping. Some of the most popular Taiwanese cuisines that are in nightmarkets are chicken, sticky tofy, xiao long bao, and tanghulu. Also, don't worry, night markets in Taiwan are very sanitary. My personal favorite night markets is the Ximending right market. here, you can find many laiwanese cuisines and places to ge shopping. Overall, all the food and chopping stores have a cheap and reasonableprice.
+                    <br><br>
+                    So in conclusion, Taiwanese cuisines are easy to find, delicious, and reflects on Taiwans past. Which is why tourists loves Taiwanese cuisines.</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <footer>
+        <p>2025 Edutrip. Michelle Regina Tissadharma</p>
+    </footer>
+</body>
+</html>

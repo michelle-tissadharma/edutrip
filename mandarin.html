@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutrip</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background-color: #4682b4;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5a9bd6;
+            border-radius: 8px;
+            transform: scale(1.1);
+        }
+
+        header {
+            background-color: #b0e0e6;
+            text-align: center;
+            padding: 30px 0;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        header h1 {
+            font-size: 42px;
+            color: #2f4f4f;
+        }
+
+        header p {
+            font-size: 20px;
+            color: #2f4f4f;
+        }
+
+        main, .mandarin {
+            padding: 40px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: slideIn 1s ease-out forwards;
+            flex: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h2 {
+            font-size: 32px;
+            color: #333;
+        }
+
+        main p {
+            font-size: 20px;
+            color: #444;
+        }
+
+        .mandarin h1 {
+            font-size: 40px;
+            color: #4b0082;
+            margin-bottom: 20px;
+        }
+
+        .mandarin p {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .mandarin table {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideIn 1s ease-out 0.5s forwards;
+        }
+
+        .mandarin img {
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: scale(0.9);
+            animation: fadeIn 1.2s ease-out 1s forwards;
+        }
+
+        footer {
+            background-color: #4682b4;
+            text-align: center;
+            padding: 15px;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agama.html">Agama</a></li>
+            <li><a href="pkn.html">PKN</a></li>
+            <li><a href="bahasaindonesia.html">Bahasa Indonesia</a></li>
+            <li><a href="bing.html">Bahasa Inggris</a></li>
+            <li><a href="ips.html">IPS</a></li>
+            <li><a href="mandarin.html">Bahasa Mandarin</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Edutrip 2025</h1>
+        <p>Website ini berisi tugas-tugas selama Edutrip.</p>
+    </header>
+
+    <section class="mandarin">
+        <h1>Ini adalah halaman Bahasa Mandarin</h1>
+        <table border="5px" style="margin: 0 auto;">
+            <tr>
+                <td>
+                    <p>Dalam pelajaran Bahasa Mandarin saya ditugaskan untuk membuat sebuah esai mengenai "buddy" saya dari Taiwan</p>
+                </td>
+            </tr>
+        </table>
+        <img src="Screenshot 2025-04-04 at 11.33.42.png" height="1500" width="1500" alt="Esai Buddy Taiwan">
+    </section>
+
+    <footer>
+        <p>2025 Edutrip. Michelle Regina Tissadharma</p>
+    </footer>
+</body>
+</html>

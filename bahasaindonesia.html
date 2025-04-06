@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edutrip</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        nav {
+            background-color: #4682b4;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #5a9bd6;
+            border-radius: 8px;
+        }
+
+        header {
+            background-color: #b0e0e6;
+            text-align: center;
+            padding: 30px 0;
+            animation: fadeIn 2s;
+        }
+
+        header h1 {
+            font-size: 50px;
+            color: #2f4f4f;
+        }
+
+        header p {
+            font-size: 24px;
+            color: #2f4f4f;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px;
+            animation: slideUp 1.5s ease-out;
+        }
+
+        .content h1 {
+            font-size: 45px;
+            color: #4b0082;
+            margin-bottom: 20px;
+        }
+
+        .content table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 700px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 5px solid black;
+        }
+
+        .content td {
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .content img {
+            display: block;
+            margin: 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .draft-section {
+            width: 95%;
+            margin: 50px auto;
+            padding: 40px;
+            text-align: left;
+            font-size: 24px;
+            line-height: 1.7;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in;
+            border: 5px solid black;
+        }
+
+        .draft-section h2 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #4682b4;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agama.html">Agama</a></li>
+            <li><a href="pkn.html">PKN</a></li>
+            <li><a href="bahasaindonesia.html">Bahasa Indonesia</a></li>
+            <li><a href="bing.html">Bahasa Inggris</a></li>
+            <li><a href="ips.html">IPS</a></li>
+            <li><a href="mandarin.html">Bahasa Mandarin</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Edutrip 2025</h1>
+        <p>Website ini berisi tugas-tugas selama Edutrip.</p>
+    </header>
+
+    <section class="content">
+        <h1>Ini adalah halaman Bahasa Indonesia</h1>
+        <table>
+            <tr>
+                <td>
+                    <p>Dalam pelajaran Bahasa Indonesia saya ditugaskan untuk membuat sebuah teks resensi mengenai salah satu hotel yang kami kunjungi saat di Taiwan.</p>
+                </td>
+            </tr>
+        </table>
+        <img src="fulon.jpg" height="600" width="600" alt="Fullon Hotel">
+    </section>
+
+    <section class="draft-section">
+        <h2>Draft AP Teks Resensi</h2>
+        <p>Taipei adalah pusat ekonomi, politik, pendidikan, dan budaya Taiwan. Taiwan memiliki iklim subtropis di sebagian besar wilayahnya, dan tropis di bagian selatannya, serta terdapat banyak penggunungan. Selain cuaca nyamannya, Taiwan juga merupakan negara yang bagus untuk belanja. Anda bisa pergi belanja di banyak pasar malam, old street, dan mall. Kemudian, anda bisa merasakan contoh budaya bagus dari Taiwan seperti datang tepat waktu saat berjanji atau diundang makan dan menyapa dari yang tertua ke yang termuda saat dikenalkan pada keluarga.</p>
+        <p>Fullon Hotel terdapat di No. 236, Sec. 3, Beishen Rd., Shenkeng Dist., New Taipei City. Lokasi hotel tersebut merupakan lokasi yang strategis yang dekat dengan bergamai macam tempat wisatawan dan juga sebuah mart. Selain lokasi strategisnya, hotel tersebut juga memiliki banyak fasilitas seperti gym, restauran, toilet, dan sebuah tempat gacha. Restauran di hotel tersebut memiliki banyak opsi makanan. Dari seksi korea ada kimchi, mie dingin, dll. Juga ada berbagai jenis roti, salad, dan buah-buahan. Secara keseluruhan, hotel ini sangat sesuai dengan kriteria hotel bintang 4.</p>
+        <p>Terdapat banyak sekali unggulan jika anda menginap di hotel ini. Pertama adalah pelayanannya, para pelayan sangat cepat dalam mengkabuli permintaan. Selain itu, hotelnya sangat bersih dan pembersihan kamar dilakukan setiap hari. Keamanan hotel juga sangat bagus karena selalu ada seseorang yang menjaga di pintu lobby. Terahkir, unggulan yang paling baik adalah rasa makanannya. Makanannya terasa gurih dan terdapat banyak opsi. Keunggulan tersebut juga disukai dari para pengunjung, contohnya dari salah satu pengunjung yang saya wawancarai yang mengatakan bahwa “mereka memberi pelayanan bagus dan saat malam saya tidur nyenyak, makanan yang mereka sediakan juga enak”.</p>
+        <p>Tetapi Fullon Hotel juga memiliki kekurangannya, yang pertama adalah pelayannya kurang bisa berbahasa ingris sehingga susah untuk berkomunikasi. Kedua, meskipun makanan berfariasi, makanan jenis westernnya kurang banyak tetapi rasa makanannya sudah enak.</p>
+        <p>Secara kesimpulan, hotel ini sesuai standar dan pantas mendapat bintang 4. Jika anda ingin menginap di hotel yang mewah, nyaman, memiliki banyak fasilitas, pergilah kehotel ini.</p>
+        <p>Hotel ini juga sangat di rekomendasikan untuk orang-orang berumur lansia dan juga bagi orang yang berkeluarga. Jika anda berkeluarga, anak anda sungguh akan menikmati hotel ini karena terdapat tempat gacha dan juga dekat dengan taman safari yang terkenal dan juga bagus.</p>
+    </section>
+
+    <footer>
+        <p>2025 Edutrip. Michelle Regina Tissadharma</p>
+    </footer>
+</body>
+</html>
